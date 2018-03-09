@@ -1,1 +1,41 @@
 Iniciando Estudos
+	
+	* Instalação do NodeJS
+
+		- Para iniciar a instalação do NodeJS, é necessário acessar o site para baixar o arquivo de instalação. https://nodejs.org/en/
+		- Escolher a versão/partição e baixar para a máquina
+
+	* Descompactando o arquivo (ubuntu)
+
+		- No meu caso estou fazendo os estudo pessoais a partir do ubuntu, assim sendo passarei com fazer a instalação nesse SO
+		
+		- Versão ubuntu 16.06
+		  Versão Node v8.10.0
+		
+		- O arquivo que foi realizado o download: https://nodejs.org/dist/v8.10.0/node-v8.10.0-linux-x64.tar.xz
+		  Essa arquivo tem uma extensão '.tar.xz'
+		
+		- Instalar o pacote para executar esse tipo de arquivo:
+		  *sudo apt-get install xz-utils
+		
+		- Comando para descompactar o arquivo:
+		  *tar -Jxf node-v8.10.0-linux-x64.tar.xz
+		  OBS: descompactar em uma pasta de sua preferência, uma pasta de trabalho
+		
+		- Configurar as variáveis de ambiente para o Node
+		  Editar o arquivo: bashrc
+		  	*vim ~/.bashrc
+		  Incluir as linhas abaixo:
+			
+			export NODE_HOME=<caminho_pasta_com_arquivo_node_descompactado>
+			export PATH=$PATH:$NODE_HOME/bin		  	
+
+		  Feito isso executar os comando abaixo para validar as configurações:
+
+		  	#node -v
+		  	#npm -version
+
+
+
+
+
